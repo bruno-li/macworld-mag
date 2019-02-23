@@ -1,15 +1,11 @@
 
 .navbar {
-    font-family: "Lato", sans-serif;
+    font-family: sans-serif;
     width: 100%;
     height: 40px;
     background: #fff;
     border-bottom: 1px solid #F2F2F2;
-    // MEDIA QUERIES
-    @include respond(small-phone){
-        height: 0;
-    }
-    
+
     // SUB CONTAINER
     &__sub-container {
         display: flex;
@@ -23,80 +19,28 @@
         color: $color-primary-black;
         background-color: #F2F2F2;
         
-        // MEDIA QUERIES
-        @include respond(tab-port){
-            height: 60px;
-        }
-        @include respond(small-phone){
-            height: 62px;
-        }
         // TOP NAVBAR
         &__top {
             display: flex;
             align-items: center;
             list-style: none;
 
-            .navbar-hamburger{
-                margin-left:330px;
-                margin-right: 15px;
-                // MEDIA QUERIES
-                @include respond(tab-port){
-                    margin: 12px 340px 5px 14px;
-                }
-                @include respond(phone){
-                    margin-right: 300px;
-                }
-                @include respond(small-phone){
-                    margin-right: 3.2rem;
-                }
-                &-logo {
-                    width: 40px;
-                    //MEDIA QUERIES 
-                    @include respond(small-phone){
-                        width: 40px;
-                        margin-left: 10px;
-                    }
-                }
-            }
             .navbar-logo{
                 margin-right: auto;
                 &__img{
                     width: 188px;
-                    // MEDIA QUERIES
-                    @include respond(tab-port){
-                        width: 122px;
-                    }
-                    @include respond(small-phone){
-                        width: 50%;
-                    }
                 }
             }
         }
 
         //  BOTTOM NAVBAR
         &__bottom {
-            display: flex;
-            justify-content:center;
-            margin-top: 105px;
-            list-style: none;
-            // MEDIA QUERIES
-             @include respond(tab-port){
-                display: none;
-                
-            }
-            .navbar-list{
-                    font-size: 15px;
-                    line-height: 15px;
-                    list-style: none;
-                    padding: 10px 16px;
-                    text-transform: uppercase;
-                    &__link{
-                        color: $color-primary-black;
-                        text-decoration: none;
-                        &:hover {
-                            color: #2a8da1;
-                        }
-                    }
+
+            &__social-media{
+                &__logo{
+
+                }
+
             }
         }
     }
