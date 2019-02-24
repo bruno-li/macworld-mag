@@ -1,49 +1,57 @@
-
 .navbar {
     font-family: sans-serif;
     width: 100%;
-    height: 40px;
+    height: 29px;
     background: #fff;
-    border-bottom: 1px solid #F2F2F2;
+    box-shadow: 0 1px 3px #3eafe9;
+
 
     // SUB CONTAINER
     &__sub-container {
         display: flex;
-        justify-content: flex-start;
         position: fixed;
         top: 0;
         width: 100%;
-        margin: auto;
-        height: 100px;
-        background: #FFF;
-        color: $color-primary-black;
-        background-color: #F2F2F2;
+        height: 46px;
+        background: #3EAFE9;
+
         
-        // TOP NAVBAR
+        // TOP NAVBAR AND LOGO
         &__top {
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             list-style: none;
-
+            margin-left: 12rem;
             .navbar-logo{
-                margin-right: auto;
+
                 &__img{
-                    width: 188px;
+                    width: 175px;
                 }
             }
         }
 
-        //  BOTTOM NAVBAR
-        &__bottom {
-
-            &__social-media{
-                &__logo{
-
-                }
+        &__list{
+            margin: 0 14px;
+            &__link{
+                font-size: 20px;
+                color: #fff;
+                text-decoration: none;
 
             }
         }
     }
+
+   //  BOTTOM NAVBAR
+  &__bottom {
+    margin-left: 12.5rem;
+    margin-top: 2.4rem;
+    list-style: none;
+     &__social-media{
+      &__logo{
+        width: 142px;
+                    }
+                }
+            }
 }
 
 
