@@ -1,18 +1,21 @@
 .footer {
+    display: flex;
 
+    background-color: #32394A;
     &__figure{
 
         &__logo{
-
+            width: 200px;
         }
     }
 
     &__left{
-
         &__list{
 
             &__link{
-
+                
+                color: #fff;
+                text-decoration: none;
             }
         }
     }
@@ -22,7 +25,8 @@
         &__list{
 
             &__link{
-
+                color: #fff;
+                text-decoration: none;
             }
         }
     }
@@ -33,7 +37,8 @@
         &__left{
             &__list{
                 &__link{
-
+                    color: #fff;
+                    text-decoration: none;
                 }
             }
         }
@@ -41,12 +46,14 @@
         &__right{
             &__list{
                 &__link{
-                    
+                    color: #fff;
+                    text-decoration: none;
                 }
             }
         }
 
         &__media{
+            display: flex;
             &__list{
                 &__icon{
 
