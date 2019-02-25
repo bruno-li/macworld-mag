@@ -55,6 +55,9 @@
      @include respond(tab-port){
          margin-left: 5px;
      }
+     @include respond(small-phone){
+         display: none;
+     }
      // SOCIAL MEDIA LOGO
       &__social-media{
         margin-top: 1px;

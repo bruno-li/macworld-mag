@@ -5,9 +5,12 @@
     font-size: 27px;
     margin-top: 4rem;
     background-color: #32394A;
-
+    // MEDIA QUERIES
     @include respond(tab-port){
         justify-content: flex-start;
+    }
+    @include respond(small-phone){
+        font-size: 24px;
     }
 
     // CHEVRON ARROW
@@ -26,20 +29,27 @@
         margin: 10px 0;
         &__logo{
             margin-left: 22rem;
-            width: 220px;
+            width: 160px;
             // MEDIA QUERIES
             @include respond(tab-port){
                 margin-left: 0;
+            }
+            @include respond(small-phone){
+                padding: 0;
+                margin-left: 8px;
             }
         }
     }
     // LEFT CONTAINER
     &__left{
-        // border: 2px solid blue;
         flex: 0 0 40%;
         // MEDIA QUERIES
         @include respond (tab-port){
             margin-left: 1rem;
+        }
+        @include respond(small-phone){
+            flex: 0 0 90%;
+            margin-left: 0rem;
         }
         // LEFT CONTAINER LIST
         &__list{
@@ -53,13 +63,14 @@
                 width: 100%;
                 margin-left: 1.5rem;
             }
+            @include respond(small-phone){
+                margin-left: 1rem;
+            }
 
             &:hover{
                 background-color: #475068;
             }
             &__link{
-                // border: 2px solid blue;
-
                 width: 85%;
                 padding: 1rem 0;
                 color: #fff;
@@ -71,19 +82,19 @@
     &__right{
         flex: 0 0 40%;
         margin-left: 7rem;
-        // border: 2px solid red;
-
+        // MEDIA QUERIES
         @include respond(tab-port){
             flex: 0 0 45%;
-
             margin-left: 4rem;
-            // // margin-right: 1rem; 
         }
+        @include respond(small-phone){
+            flex: 0 0 90%;
+            margin-left: 1rem;
+        }
+
 
         // RIGHT CONTAINER LIST
         &__list{
-            // border: 2px solid red;
-
             display: flex;
             margin-right: 5rem;
             list-style: none;
@@ -97,7 +108,6 @@
             }
      
             &__link{
-                // display: block;
                 width: 85%;
                 padding: 1rem 0;
                 color: #fff;
@@ -127,6 +137,10 @@
         &__left{
             margin-top: 1.8rem;
             flex: 0 0 50%;
+            // MEDIA QUERIES
+            @include respond(small-phone){
+                display: none;
+            }
             // LEFT CONTAINER LIST
             &__list{
                 list-style: none;
@@ -146,6 +160,10 @@
         &__right{
             margin-top: 1.8rem;
             flex: 0 0 50%;
+         // MEDIA QUERIES
+           @include respond(small-phone){
+              display: none;
+          }
             // RIGHT CONTAINER LIST
             &__list{
                 margin: 0 0 1.5rem 8.3rem;
@@ -171,13 +189,21 @@
             @include respond(tab-port){
                 margin-left: 0;
             }
+            @include respond(small-phone){
+                flex-direction: column;
+                align-items: center;
+                margin-top: 1rem;
+            }
             // SOCIAL MEDIA LIST
             &__list{
                 list-style: none;
                 color: #fff;
-
+                // MEDIA QUERIES
                 @include respond(phone){
                     font-size: 17px;
+                }
+                @include respond(small-phone){
+                    margin-top: 1rem;
                 }
                 &__icon{
                     width: 130px;
