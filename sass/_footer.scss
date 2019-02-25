@@ -6,11 +6,19 @@
     margin-top: 4rem;
     background-color: #32394A;
 
+    @include respond(tab-port){
+        justify-content: flex-start;
+    }
+
     // CHEVRON ARROW
     &__chevron{
         width: 16px;
         padding: 1rem 0;
         height: 100%;
+        // MEDIA QUERIES
+        @include respond(tab-port){
+            margin-left: 15px;
+        }
     }
     // TOP LOGO CONTAINER
     &__figure{
@@ -19,24 +27,39 @@
         &__logo{
             margin-left: 22rem;
             width: 220px;
+            // MEDIA QUERIES
+            @include respond(tab-port){
+                margin-left: 0;
+            }
         }
     }
     // LEFT CONTAINER
     &__left{
+        // border: 2px solid blue;
         flex: 0 0 40%;
-        // border: 2px solid red;
-
+        // MEDIA QUERIES
+        @include respond (tab-port){
+            margin-left: 1rem;
+        }
         // LEFT CONTAINER LIST
         &__list{
             display: flex;
             margin-left: 13rem;
             list-style: none;
-            // border: 2px solid red;
-            width: 82%;
+            width: 80%;
+
+            // MEDIA QUERIES
+            @include respond (tab-port){
+                width: 100%;
+                margin-left: 1.5rem;
+            }
+
             &:hover{
                 background-color: #475068;
             }
             &__link{
+                // border: 2px solid blue;
+
                 width: 85%;
                 padding: 1rem 0;
                 color: #fff;
@@ -46,13 +69,29 @@
     }
     // RIGHT CONTAINER
     &__right{
-        flex: 0 0 30%;
+        flex: 0 0 40%;
         margin-left: 7rem;
+        // border: 2px solid red;
+
+        @include respond(tab-port){
+            flex: 0 0 45%;
+
+            margin-left: 4rem;
+            // // margin-right: 1rem; 
+        }
+
         // RIGHT CONTAINER LIST
         &__list{
+            // border: 2px solid red;
+
             display: flex;
             margin-right: 5rem;
             list-style: none;
+
+        // MEDIA QUERIES
+        @include respond(tab-port){
+            width: 100%;
+        }
             &:hover{
                 background-color: #475068;
             }
@@ -70,6 +109,7 @@
         }
     }
     
+
     // COPYRIGHT CONTAINER
     .copyright{
         display: flex;
@@ -79,6 +119,10 @@
         margin: 1rem auto;
         width: 70%;
         border-top: 1px solid #fff;      
+        // MEDIA QUERIES
+        @include respond(tab-port){
+            width: 95%;
+        }
         // LEFT CONTAINER
         &__left{
             margin-top: 1.8rem;
@@ -88,6 +132,10 @@
                 list-style: none;
                 margin: 0 0 1.5rem 10rem;
                 text-align: left;
+                // MEDIA QUERIES
+                @include respond(tab-port){
+                    margin-left: 1rem;
+                }
                 &__link{
                     color: #fff;
                     text-decoration: none;
@@ -102,6 +150,10 @@
             &__list{
                 margin: 0 0 1.5rem 8.3rem;
                 list-style: none;
+                // MEDIA QUERIES
+                @include respond(tab-port){
+                    margin-left: 0;
+                }
                 &__link{
                     color: #fff;
                     text-decoration: none;
@@ -115,10 +167,18 @@
             align-items: flex-end;
             margin: 2rem 0 0 8rem;
             width: 100%;
+            // MEDIA QUERIES
+            @include respond(tab-port){
+                margin-left: 0;
+            }
             // SOCIAL MEDIA LIST
             &__list{
                 list-style: none;
                 color: #fff;
+
+                @include respond(phone){
+                    font-size: 17px;
+                }
                 &__icon{
                     width: 130px;
                 }
@@ -131,7 +191,7 @@
         // LEGAL TEXT
         &__legal{
             flex: 0 0 100%;
-            font-size: 19px;
+            font-size: 18px;
             margin: 1.5rem 0;
             text-align: center;
             color: #fff;

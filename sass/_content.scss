@@ -2,10 +2,14 @@
     margin: 0 auto;
     width: 55%;
 
+    @include respond(tab-port){
+      width: 80%;
+    }
 
     // HEADER SECTION
 .title {
 
+    // header top link list
     &__link-list{
       display: flex;
       list-style: none;
@@ -21,6 +25,7 @@
       margin-right: 10px;
     }
 
+    // HEADER
     &__header{
         &__heading{
           font-size: 52px;
@@ -60,7 +65,7 @@
         width: 100%;
       }
     }
-    
+      // PARAGRAPHS
     &__paragraph{
       font-size: 19px;
       font-weight: 300;
