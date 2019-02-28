@@ -16,8 +16,8 @@
     // CHEVRON ARROW
     &__chevron{
         width: 16px;
-        padding: 1rem 0;
         height: 100%;
+        padding: 1rem 0;
         // MEDIA QUERIES
         @include respond(tab-port){
             margin-left: 15px;
@@ -54,9 +54,9 @@
         // LEFT CONTAINER LIST
         &__list{
             display: flex;
-            margin-left: 13rem;
             list-style: none;
             width: 80%;
+            margin-left: 13rem;
 
             // MEDIA QUERIES
             @include respond (tab-port){
@@ -92,12 +92,11 @@
             margin-left: 1rem;
         }
 
-
         // RIGHT CONTAINER LIST
         &__list{
             display: flex;
-            margin-right: 5rem;
             list-style: none;
+            margin-right: 5rem;
 
         // MEDIA QUERIES
         @include respond(tab-port){
@@ -135,8 +134,8 @@
         }
         // LEFT CONTAINER
         &__left{
-            margin-top: 1.8rem;
             flex: 0 0 50%;
+            margin-top: 1.8rem;
             // MEDIA QUERIES
             @include respond(small-phone){
                 display: none;
@@ -144,22 +143,22 @@
             // LEFT CONTAINER LIST
             &__list{
                 list-style: none;
-                margin: 0 0 1.5rem 10rem;
                 text-align: left;
+                margin: 0 0 1.5rem 10rem;
                 // MEDIA QUERIES
                 @include respond(tab-port){
                     margin-left: 1rem;
                 }
                 &__link{
-                    color: #fff;
                     text-decoration: none;
+                    color: #fff;
                 }
             }
         }
         // RIGHT CONTAINER
         &__right{
-            margin-top: 1.8rem;
             flex: 0 0 50%;
+            margin-top: 1.8rem;
          // MEDIA QUERIES
            @include respond(small-phone){
               display: none;
@@ -218,8 +217,8 @@
         &__legal{
             flex: 0 0 100%;
             font-size: 18px;
-            margin: 1.5rem 0;
             text-align: center;
+            margin: 1.5rem 0;
             color: #fff;
         }
     }
